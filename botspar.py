@@ -8,6 +8,8 @@ import requests
 ffmpeg_path = "C:\\ffmpeg\\ffmpeg\\bin"  
 os.environ['PATH'] += os.pathsep + ffmpeg_path
 
+TOKEN = ''
+
 # Use uma variável de ambiente para o token
 intents = discord.Intents.default()
 intents.messages = True
@@ -121,4 +123,4 @@ async def on_message(message):
 
 
 
-client.run('')
+client.run(TOKEN)
